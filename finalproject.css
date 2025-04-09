@@ -136,7 +136,7 @@ nav .logo {
 .first{
     padding: 100px;
     height: 70vh;
-    background-image: url(first.jpg);
+    background-image: url(images/first.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left center;
@@ -233,6 +233,7 @@ nav .logo {
     background-color: #f7f7f7;
     border-radius: 20px;
     padding: 15px;
+    margin: auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
   }
@@ -267,24 +268,27 @@ nav .logo {
     color: #222;
   }
   
-  .under1 button {
+  .btn {
     background-color: #efd05d;
     color: white;
     border: none;
     width: 100px;
     height: 30px;
-    padding:5px 10px;
+    padding: 5px 10px;
     border-radius: 20px;
     cursor: pointer;
     transition: background-color 0.3s;
-    
     font-size: clamp(0.9rem, 2vw, 1rem);
-  }
-  
-  .under1 button:hover {
+    text-decoration: none; /* This removes the underline */
+    display: inline-flex; /* or inline-block */
+    align-items: center;
+    justify-content: center;
+}
+
+.btn:hover {
     background-color: #000;
     color: #fff;
-  }
+}
 
 .services-section {
     text-align: center;
